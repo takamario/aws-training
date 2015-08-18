@@ -1,0 +1,16 @@
+/Users/takamarushoei/.rbenv/versions/2.1.5/bin/ruby extconf.rb 
+checking for mysql_ssl_set()... yes
+checking for rb_str_set_len()... yes
+checking for rb_thread_start_timer()... no
+checking for mysql.h... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling mysql.c
+linking shared-object mysql/mysql_api.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 mysql_api.bundle ./.gem.20150818-24883-7bo6ar/mysql
+installing default mysql_api libraries
